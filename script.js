@@ -32,3 +32,14 @@ simpleForm.addEventListener('submit', (event) => {
   formMessage.textContent = "Form submitted successfully!";
 });
 
+const focusInput = document.getElementById('focus-input');
+const focusMessage = document.getElementById('focus-message');
+
+focusInput.addEventListener('focus', () => {
+  focusMessage.textContent = "Input is focused!";
+});
+
+focusInput.addEventListener('blur', () => {
+  focusMessage.textContent = "Input lost focus.";
+});
+
