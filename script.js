@@ -17,3 +17,10 @@ hoverButton.addEventListener('click', () => {
   mouseMessage.textContent = "You clicked the button!";
 });
 
+const keyboardInput = document.getElementById('keyboard-input');
+const keyPressed = document.getElementById('key-pressed');
+
+keyboardInput.addEventListener('keyup', (event) => {
+  keyPressed.textContent = `You pressed: ${event.key}`;
+});
+
