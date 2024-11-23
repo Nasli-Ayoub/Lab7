@@ -24,3 +24,11 @@ keyboardInput.addEventListener('keyup', (event) => {
   keyPressed.textContent = `You pressed: ${event.key}`;
 });
 
+const simpleForm = document.getElementById('simple-form');
+const formMessage = document.getElementById('form-message');
+
+simpleForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  formMessage.textContent = "Form submitted successfully!";
+});
+
