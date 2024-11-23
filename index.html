@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 7: JavaScript Events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lab 7: JavaScript Events</h1>
+  <div id="event-demo">
+    <section id="mouse-event">
+        <h2>Mouse Event</h2>
+        <button id="hover-button">Hover or Click Me</button>
+        <p id="mouse-message"></p>
+    </section>
+    <section id="keyboard-event">
+        <h2>Keyboard Event</h2>
+        <input type="text" id="keyboard-input" placeholder="Type something">
+        <p id="key-pressed"></p>
+    </section>
+    <section id="form-event">
+        <h2>Form Event</h2>
+        <form id="simple-form">
+          <input type="text" id="form-input" placeholder="Enter text">
+          <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+    <section id="focus-blur-event">
+        <h2>Focus and Blur Events</h2>
+        <input type="text" id="focus-input" placeholder="Focus on me">
+        <p id="focus-message"></p>
+    </section>
+    <section id="event-delegation">
+        <h2>Event Delegation</h2>
+        <div id="button-container">
+          <button class="delegate-button">Button 1</button>
+          <button class="delegate-button">Button 2</button>
+          <button class="delegate-button">Button 3</button>
+        </div>
+        <p id="delegate-message"></p>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
