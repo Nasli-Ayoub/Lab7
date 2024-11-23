@@ -17,13 +17,16 @@ hoverButton.addEventListener('click', () => {
   mouseMessage.textContent = "You clicked the button!";
 });
 
+// Keyboard Event
 const keyboardInput = document.getElementById('keyboard-input');
 const keyPressed = document.getElementById('key-pressed');
 
+// Key press event
 keyboardInput.addEventListener('keyup', (event) => {
   keyPressed.textContent = `You pressed: ${event.key}`;
 });
 
+// Form event
 const simpleForm = document.getElementById('simple-form');
 const formMessage = document.getElementById('form-message');
 
@@ -32,6 +35,7 @@ simpleForm.addEventListener('submit', (event) => {
   formMessage.textContent = "Form submitted successfully!";
 });
 
+// Focus and blur event
 const focusInput = document.getElementById('focus-input');
 const focusMessage = document.getElementById('focus-message');
 
@@ -43,6 +47,7 @@ focusInput.addEventListener('blur', () => {
   focusMessage.textContent = "Input lost focus.";
 });
 
+// Event delegation
 const buttonContainer = document.getElementById('button-container');
 const delegateMessage = document.getElementById('delegate-message');
 
